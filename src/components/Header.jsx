@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import Menu from '@components/Menu';
 import AppContext from '@context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
@@ -8,13 +9,13 @@ import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/Header.module.scss';
 const Header = () => {
  
-    const { state, toggleOrder, toogleMenu } = useContext(AppContext);
+    const { state, toggleOrder, toggleMenu } = useContext(AppContext);
   
     return (
         <nav className={styles.Nav}>
-            <img src={menu} alt="menu" className="menu" />
-            <div className="navbar-left">
-                <img src={logo} alt="logo" className="logo" />
+            <Image src={menu} alt="menu" className={styles.menu} />
+            <div className={styles['navbar-left']}>
+                <Image src={logo} alt="logo" className={styles['nav-logo']}/>
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -36,17 +37,17 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            <div className="navbar-right">
+            <div className={styles['navbar-right']}>
                 <ul>
-                    <li className="navbar-email" onClick = {() => toogleMenu()}>email@example.com</li>
-                    <li className="navbar-shopping-cart" onClick = {() => toggleOrder()}>
-                        <img src={shoppingCart} alt="shopping-cart" />
+                    <li className={styles['navbar-email']} onClick = {() => toggleMenu()}>email@example.com</li>
+                    <li className={styles['navbar-shopping-cart']} onClick = {() => toggleOrder()}>
+                        <Image src={shoppingCart} alt="shopping-cart" />
                         {state.cart.length > 0 ? <div > {state.cart.length}</div> : null } 
                     </li>
                 </ul>
             </div>
-            {toggle && <Menu />}
-            {toggleOrders && <MyOrder />}
+            {state.menuIsOpen && <Menu />}
+            { state.orderIsOpen && <MyOrder />}
         </nav>
     );
 }
