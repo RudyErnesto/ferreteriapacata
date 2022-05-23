@@ -1,8 +1,8 @@
 import React, {useContext} from 'react';
-import OrderItem from '@components/OderItem';
-import AppContext from '@context/AppContext';
-import '@styles/MyOrder.scss';
-import close from '@icons/flechita.svg';
+import OrderItem from 'components/OderItem';
+import AppContext from 'context/AppContext';
+import 'styles/MyOrder.scss';
+import close from 'assets/icons/flechita.svg';
 const MyOrder = () => {
 	const {state} = useContext(AppContext);
 
