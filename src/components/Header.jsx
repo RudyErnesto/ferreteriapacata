@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
-import 'styles/Header.scss';
-import Menu from'components/Menu';
-import AppContext from 'context/AppContext';
-import shoppingCart from 'assets/icons/icon_shopping_cart.svg';
-import MyOrder from 'containers/MyOrder';
-import menu from 'assets/icons/icon_menu.svg';
-import logo from 'assets/logos/logo_yard_sale.svg';
+import Menu from '@components/Menu';
+import AppContext from '@context/AppContext';
+import shoppingCart from '@icons/icon_shopping_cart.svg';
+import MyOrder from '@containers/MyOrder';
+import menu from '@icons/icon_menu.svg';
+import logo from '@logos/logo_yard_sale.svg';
+import styles from '@styles/Header.module.scss';
 const Header = () => {
  
     const { state, toggleOrder, toogleMenu } = useContext(AppContext);
   
     return (
-        <nav >
+        <nav className={styles.Nav}>
             <img src={menu} alt="menu" className="menu" />
             <div className="navbar-left">
                 <img src={logo} alt="logo" className="logo" />

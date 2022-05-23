@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
-import 'styles/OrderItem.scss';
-import AppContext from 'context/AppContext';
-import close from 'assets/icons/icon_close.png';
+import AppContext from '@context/AppContext';
+import close from '@icons/icon_close.png';
+import styles from '@styles/OrderItem.module.scss';
 const OderItem = ({ product }) => {
 
 	const { removeFromCart } = useContext(AppContext);
@@ -10,7 +10,7 @@ const OderItem = ({ product }) => {
 	}
 
     return (
-        <div className="OrderItem">
+        <div className={styles.OderItem}>
 			<figure>
 				<img src={product.images[0]} alt={product.title} />
 			</figure>
