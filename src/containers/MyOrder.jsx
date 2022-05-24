@@ -13,21 +13,21 @@ const MyOrder = () => {
 	}
     return (
         <aside className={styles.MyOrder}>
-			<div className="title-container">
+			<div className={styles['title-container']}>
 				<img src={close} alt="arrow" />
 				<p className="title">My order</p>
 			</div>
-			<div className="my-order-content">
+			<div className={styles['my-order-content']}>
 				{state.cart.map(product => (
 					<OrderItem product = {product} key ={`orderItem-${product.id}`} />
 				))}
-				<div className="order">
+				<div className={styles['order']}>
 					<p>
 						<span>Total</span>
 					</p>
 					<p>${sumaTotal()}</p>
 				</div>
-				<button className="primary-button">
+				<button className={styles['primary-button']}>
 					Checkout
 				</button>
 			</div>

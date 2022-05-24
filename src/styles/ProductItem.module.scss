@@ -24,15 +24,15 @@
 }
 .product-info div p:nth-child(1) {
 	font-weight: bold;
-	font-size: var(--md);
+	font-size: $--md;
 	margin-top: 0;
 	margin-bottom: 4px;
 }
 .product-info div p:nth-child(2) {
-	font-size: var(--sm);
+	font-size: $--sm;
 	margin-top: 0;
 	margin-bottom: 0;
-	color: var(--very-light-pink);
+	color: $--very-light-pink;
 }
 @media (max-width: 640px) {
 	.cards-container {
