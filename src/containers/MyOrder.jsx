@@ -3,6 +3,7 @@ import OrderItem from '@components/OderItem';
 import AppContext from '@context/AppContext';
 import close from '@icons/flechita.svg';
 import styles from '@styles/MyOrder.module.scss';
+import Image from 'next/image';
 const MyOrder = () => {
 	const {state} = useContext(AppContext);
 
@@ -14,7 +15,7 @@ const MyOrder = () => {
     return (
         <aside className={styles.MyOrder}>
 			<div className={styles['title-container']}>
-				<img src={close} alt="arrow" />
+				<Image src={close} alt={styles.arrow} />
 				<p className="title">My order</p>
 			</div>
 			<div className={styles['my-order-content']}>

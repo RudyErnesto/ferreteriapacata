@@ -12,7 +12,7 @@ const ProducItem = ({product}) => {
 	}
     return (
         <div className={styles.ProducItem}>
-			<Image loader={() => product.images[0]} src={product.images[0]} alt={product.title} width="100%" height="100%" layout="responsive" />
+			<Image loader={() => product?.images[0]} src={product?.images[0]} alt={product?.title} width="100%" height="100%" layout={'responsive'}/>
 			<div className={styles['product-info']}>
 		   		<div>
 					<p>$ {product.price}</p>
