@@ -26,16 +26,16 @@
 }
 .navbar-left ul,
 .navbar-right ul{
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   align-items: center;
-   height: 60px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
 }
 .navbar-left ul li a,
 .navbar-right ul li a{
-text-decoration: none;  
+text-decoration: none;
 color: $--very-light-pink;
 border: 1px solid $--white;
 padding: 8px;
@@ -43,7 +43,7 @@ border-radius: 8px;
 }
 .navbar-left ul li a:hover,
 .navbar-right ul li a:hover{
-text-decoration: none;  
+text-decoration: none;
 color: $--hospital-green;
 border: 1px solid $--hospital-green;
 }
@@ -56,18 +56,18 @@ border: 1px solid $--hospital-green;
     position: relative;
 }
 .navbar-shopping-cart div {
-     width: 16px;
-     height: 16px;
-     background-color: $--hospital-green;
-     border-radius: 50%;
-     font-weight: bold;
-     font-size: $--sm;
-     position: absolute;
-     top: -6px;
-     right: -3px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
+    width: 16px;
+    height: 16px;
+    background-color: $--hospital-green;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: $--sm;
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 640px) {
     .menu{
