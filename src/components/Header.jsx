@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import Menu from '@components/Menu';
 import AppContext from '@context/AppContext';
 import shoppingCart from '@icons/icon_shopping_cart.svg';
@@ -13,7 +14,9 @@ const Header = () => {
         <nav className={styles.Nav}>
             <Image src={menu} alt="menu" className={styles.menu} />
             <div className={styles['navbar-left']}>
-                <Image src={logo} alt="logo" className={styles['nav-logo']}/>
+                <Link href="/">
+                    <Image src={logo} alt="logo" className={styles['nav-logo']}/>
+                </Link>
                 <ul>
                     <li>
                         <a href="/">All</a>
@@ -45,7 +48,7 @@ const Header = () => {
                 </ul>
             </div>
             {state.menuIsOpen && <Menu />}
-            { state.orderIsOpen && <MyOrder />}
+            {state.orderIsOpen && <MyOrder />}
         </nav>
     );
 }

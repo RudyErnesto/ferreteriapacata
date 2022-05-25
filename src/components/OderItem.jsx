@@ -13,7 +13,7 @@ const OderItem = ({ product }) => {
     return (
         <div className={styles.OderItem}>
 			<figure>
-				<Image loader={() => product.images[0]}  src={product.images[0]} alt={product.title} width="100%" height="100%" layout="responsive" />
+				{product && <Image loader={() => product?.images[0]}  src={product?.images[0]} alt={product?.title} width={70} height={70}  />}
 			</figure>
 			<p>{product?.title}</p>
 			<p>${product?.price}</p>

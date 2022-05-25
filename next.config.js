@@ -4,6 +4,9 @@ const nextConfig = {
   env: {
     customKey: 'customValue',
   },
+  images: {
+    domains: ['placeimg*com', 'api*lorem*space'],
+  },
   /* basePath: '/dist', */ 
   // Comenta la linea basePath para evitar el error 404
   compress: true,
@@ -17,4 +20,4 @@ const nextConfig = {
     ]
   }
 }
-module.exports = nextConfig 
+module.exports = nextConfig

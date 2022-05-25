@@ -20,14 +20,13 @@ const useInitialState = () => {
             ...state,
             cart: state.cart.filter(items => items.id !== payload.id),
         });
-    }
+    };
     const toggleOrder = () => {
         setState({
           ...state,
           orderIsOpen: !state.orderIsOpen,
         });
       };
-    
       const toggleMenu = () => {
         setState({
           ...state,
@@ -41,7 +40,6 @@ const useInitialState = () => {
         toggleOrder,
         toggleMenu,
     }
-  
 }
 
 export default useInitialState

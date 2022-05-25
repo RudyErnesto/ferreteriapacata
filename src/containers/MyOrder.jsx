@@ -1,4 +1,5 @@
 import React, {useContext} from 'react';
+import Link from 'next/link';
 import OrderItem from '@components/OderItem';
 import AppContext from '@context/AppContext';
 import close from '@icons/flechita.svg';
@@ -28,12 +29,13 @@ const MyOrder = () => {
 					</p>
 					<p>${sumaTotal()}</p>
 				</div>
-				<button className={styles['primary-button']}>
+				<Link  href="/Checkout" className={styles['primary-button']}  >
 					Checkout
-				</button>
+				</Link>
 			</div>
 		</aside>
     );
 }
+
 
 export default MyOrder;
