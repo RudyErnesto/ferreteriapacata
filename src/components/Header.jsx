@@ -8,9 +8,7 @@ import menu from '@icons/icon_menu.svg';
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/Header.module.scss';
 const Header = () => {
- 
     const { state, toggleOrder, toggleMenu } = useContext(AppContext);
-  
     return (
         <nav className={styles.Nav}>
             <Image src={menu} alt="menu" className={styles.menu} />

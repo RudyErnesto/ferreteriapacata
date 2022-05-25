@@ -1,6 +1,6 @@
-import React from 'react';
-import OrderItem from '@components/OderItem';
-import styles from '@styles/Checkout.module.scss';
+import React from "react";
+import OrderItem from "@components/OderItem";
+import styles from "@styles/Checkout.module.scss";
 const Checkout = () => {
     return (
         <div className={styles.Checkout}>
