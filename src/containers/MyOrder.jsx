@@ -29,8 +29,8 @@ const MyOrder = () => {
 					</p>
 					<p>${sumaTotal()}</p>
 				</div>
-				<Link  href="/Checkout" className={styles['primary-button']}  >
-					Checkout
+				<Link  href="/Checkout"  >
+					<a className={styles['primary-button']} > Checkout </a>
 				</Link>
 			</div>
 		</aside>
