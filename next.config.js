@@ -5,7 +5,7 @@ const nextConfig = {
     customKey: 'customValue',
   },
   images: {
-    domains: ['placeimg*com', 'api*lorem*space'],
+    domains: ['placeimg.com', 'api.lorem.space'],
   },
   /* basePath: '/dist', */ 
   // Comenta la linea basePath para evitar el error 404
