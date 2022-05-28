@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layaout from '@containers/Layaout';
 import Login from '@pages/Login';
 import Home from '@pages/Home';
@@ -31,10 +31,10 @@ const app = () => {
 					<Route path="/checkout" exact element= {<Checkout/>} />
 					<Route path="/orders" exact element= {<Orders/>} />
                     <Route path="*" exact element = { <NotFound/>} />
-                 </Routes>
+                </Routes>
             </Layaout>
         </BrowserRouter>
         </AppContext.Provider>
-    );
-}
+  );
+};
 export default app;

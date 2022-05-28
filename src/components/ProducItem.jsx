@@ -13,8 +13,7 @@ const ProducItem = ({product}) => {
 	};
     return (
         <div className={styles.ProducItem}>
-			{product.images[0] && <Image src= {product.images[0]}
-			alt={product.title} width={70} height={70} layout={'responsive'} />}
+			{product.images[1] && <Image loader={() => product?.images[0]} src= {product.images[0]} alt={product.title} width={70} height={70} layout="responsive" />}
 			<div className={styles['product-info']}>
 				<div>
 					<p>$ {product.price}</p>
@@ -25,7 +24,7 @@ const ProducItem = ({product}) => {
 				</figure>
 			</div>
 		</div>
-			);
+	);
 };
 
 export default ProducItem;
