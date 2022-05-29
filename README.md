@@ -1,9 +1,7 @@
 ## Comando de instalacion
 - npm i prettier eslint-plugin-prettier eslint-plugin-jsx-a11y eslint-config-prettier eslint-config-next
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
+## Comandos para lavantar el servidor
 
 First, run the development server:
 
